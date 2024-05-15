@@ -1,13 +1,6 @@
 let mysteryCode = '';
 let superMysteryCode = '';
 
-// Находятся здесь чтобы можно было только импортировать скрипт, без доп. подключений в шаблоне
-function loadSweetAlertScript() {
-    var script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
-    document.head.appendChild(script);
-}
-
 function createGiftBoxImage() {    
     var hiddenGift = document.createElement('div');
 
@@ -96,7 +89,6 @@ function mysteryDialogue() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    loadSweetAlertScript();
     createGiftBoxImage();
     initSecrets();
 
