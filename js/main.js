@@ -71,13 +71,18 @@ function checkSuperMysteryCode() {
 }
 
 function mysteryDialogue() {    
+    const githubIcon = '<img src="../assets/images/github-mark.svg" style="max-width: 30px; cursor: pointer;" alt="GitHub Icon" onclick="window.location.href=\'https://adexitum.github.io/homework/\'" style="cursor: pointer;">';
+    
     Swal.fire({
         title: 'Здесь спрятаны секреты!',
         html:
+          '<div style="text-align: center;">' +
+          'А еще я есть на GitHub Pages!   ' + githubIcon + '<br>' +
           '<input id="mysteryCode" class="swal2-input" placeholder="Секретный код">' +
           '<button class="swal2-cancel swal2-styled" onclick="checkMysteryCode()">OK</button>' +
           '<input id="superMysteryCode" class="swal2-input" placeholder="СУПЕР секретный код">' +
-          '<button class="swal2-cancel swal2-styled" onclick="checkSuperMysteryCode()">OK</button>',
+          '<button class="swal2-cancel swal2-styled" onclick="checkSuperMysteryCode()">OK</button>' +
+          '</div>',
         icon: 'question',
         confirmButtonText: 'Выйти',
         allowOutsideClick: () => !Swal.isLoading()
