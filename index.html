@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/item.css">
+</head>
+<body>
+    <div id="header">
+        <script>
+            fetch('./shared/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+    </div>
+    <main>
+        <div class="container" id="itemsContainer"></div>
+    </main>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/generateItems.js"></script>
+</html>

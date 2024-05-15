@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+</head>
+<body>
+    <div id="header">
+        <script>
+            fetch('./shared/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+    </div>
+    <main>
+        <div class="container">
+            <h1>Свяжитесь с нами</h1>
+            <div class="contact-info">
+                <p><strong>Телефон:</strong> +7 (123) 456-7890</p>
+                <p><strong>WhatsApp:</strong> +7 (987) 654-3210</p>
+                <p><strong>Адрес:</strong> Москва, ул. Пушкина, дом Колотушкина</p>
+            </div>
+        </div>   
+    </main>
+</body>
+<script src="./js/main.js"></script>
+</html>

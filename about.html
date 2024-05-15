@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+</head>
+<body>
+    <div id="header">
+        <script>
+            fetch('./shared/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+    </div>
+    <main>
+        <div class="container">
+            <h1>О нас</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nisi eget velit consectetur ullamcorper. Donec rhoncus ligula vel sapien consectetur, sit amet interdum nunc ultricies. Ut at feugiat lorem. Fusce auctor volutpat elit, ac fermentum libero tincidunt ut. Curabitur efficitur purus vitae risus vulputate, sit amet hendrerit urna fermentum. Phasellus nec lacus vitae metus eleifend lacinia. Nullam dignissim neque nec tortor mollis, vel luctus purus rhoncus.</p>
+            <img src="./assets/images/placeholder_400x200.png" alt="Placeholder 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nisi eget velit consectetur ullamcorper. Donec rhoncus ligula vel sapien consectetur, sit amet interdum nunc ultricies. Ut at feugiat lorem. Fusce auctor volutpat elit, ac fermentum libero tincidunt ut. Curabitur efficitur purus vitae risus vulputate, sit amet hendrerit urna fermentum. Phasellus nec lacus vitae metus eleifend lacinia. Nullam dignissim neque nec tortor mollis, vel luctus purus rhoncus.</p>
+            <img src="./assets/images/placeholder_400x200.png" alt="Placeholder 2">
+            <h2>И еще о нас</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nisi eget velit consectetur ullamcorper. Donec rhoncus ligula vel sapien consectetur, sit amet interdum nunc ultricies. Ut at feugiat lorem. Fusce auctor volutpat elit, ac fermentum libero tincidunt ut.</p>
+            <img src="./assets/images/placeholder_400x200.png" alt="Placeholder 3">
+            <h2>И еще</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nisi eget velit consectetur ullamcorper. Donec rhoncus ligula vel sapien consectetur, sit amet interdum nunc ultricies. Ut at feugiat lorem. Fusce auctor volutpat elit, ac fermentum libero tincidunt ut.</p>
+            <img src="./assets/images/placeholder_400x200.png" alt="Placeholder 3">
+            <h2>И еще...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nisi eget velit consectetur ullamcorper. Donec rhoncus ligula vel sapien consectetur, sit amet interdum nunc ultricies. Ut at feugiat lorem. Fusce auctor volutpat elit, ac fermentum libero tincidunt ut.</p>
+            <img src="./assets/images/placeholder_400x200.png" alt="Placeholder 3">
+        </div>  
+    </main>
+</body>
+<script src="./js/main.js"></script>
+</html>
