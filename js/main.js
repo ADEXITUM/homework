@@ -1,5 +1,3 @@
-import Swal from './sweetAlert2.js'
-
 let mysteryCode = '';
 let superMysteryCode = '';
 
