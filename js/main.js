@@ -71,7 +71,7 @@ function checkSuperMysteryCode() {
 }
 
 function mysteryDialogue() {    
-    const githubIcon = '<img src="../assets/images/github-mark.svg" style="max-width: 30px; cursor: pointer;" alt="GitHub Icon" onclick="window.location.href=\'https://adexitum.github.io/homework/\'" style="cursor: pointer;">';
+    const githubIcon = '<img src="./assets/images/github-mark.svg" style="max-width: 30px; cursor: pointer;" alt="GitHub Icon" onclick="window.location.href=\'https://adexitum.github.io/homework/\'" style="cursor: pointer;">';
     
     Swal.fire({
         title: 'Здесь спрятаны секреты!',
